@@ -1,0 +1,23 @@
+.paginationContainer :global(.ant-pagination-options){
+    display: none !important;
+}
+
+.card_container{
+    width: 1100px;
+    margin: auto;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.search_wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.loading_container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 80vh; 
+}

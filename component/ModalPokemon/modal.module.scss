@@ -1,0 +1,99 @@
+.title_section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokemon_padding_title {
+  margin: 0;
+}
+
+.pokemon_name {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.pokemon_code {
+  font-size: 30px;
+}
+
+.modal_container :global(.ant-modal-content) {
+  background: linear-gradient(to top, #60bd58 0%, #a3e496 90%, #a3e496 100%);
+  background: #60bd58;
+}
+
+.type-grass :global(.ant-modal-content) {
+  background: linear-gradient(to top, #60bd58 0%, #a3e496 90%, #a3e496 100%);
+}
+
+.type-fire :global(.ant-modal-content) {
+  background: linear-gradient(to top, #fba64c 0%, #ffd085 90%, #ffd085 100%);
+}
+
+.type-water :global(.ant-modal-content) {
+  background: linear-gradient(to top, #539ddf 0%, #a8cbe8 90%, #a8cbe8 100%);
+}
+
+.type-bug :global(.ant-modal-content) {
+  background: linear-gradient(to top, #92bd2d 0%, #b1c57d 90%, #b1c57d 100%);
+}
+
+.type-normal :global(.ant-modal-content) {
+  background: linear-gradient(to top, #a0a29f 0%, #c0c0c0 90%, #c0c0c0 100%);
+}
+
+.type-poison :global(.ant-modal-content) {
+  background: linear-gradient(to top, #b763cf 0%, #d5a0d4 90%, #d5a0d4 100%);
+}
+
+.type-electric :global(.ant-modal-content) {
+  background: linear-gradient(to top, #f2d94e 0%, #ffec82 90%, #ffec82 100%);
+}
+
+.type-ground :global(.ant-modal-content) {
+  background: linear-gradient(to top, #da7c4d 0%, #f1ca89 90%, #f1ca89 100%);
+}
+
+.type-fairy :global(.ant-modal-content) {
+  background: linear-gradient(to top, #ef90e6 0%, #ffc0e3 90%, #ffc0e3 100%);
+}
+
+.type-fighting :global(.ant-modal-content) {
+  background: linear-gradient(to top, #d3425f 0%, #ff8e8e 90%, #ff8e8e 100%);
+}
+
+.type-psychic :global(.ant-modal-content) {
+  background: linear-gradient(to top, #fa8582 0%, #ffb2b2 90%, #ffb2b2 100%);
+}
+
+.type-rock :global(.ant-modal-content) {
+  background: linear-gradient(to top, #d8bc5a 0%, #d8bc5a 90%, #d8bc5a 100%);
+}
+
+.type-dark :global(.ant-modal-content) {
+  background: linear-gradient(to top, #595761 0%, #595761 90%, #595761 100%);
+}
+
+.type-dragon :global(.ant-modal-content) {
+  background: linear-gradient(to top, #0c69c8 0%, #0c69c8 90%, #0c69c8 100%);
+}
+
+.type-flying :global(.ant-modal-content) {
+  background: linear-gradient(to top, #a1bbec 0%, #a1bbec 90%, #a1bbec 100%);
+}
+
+.type-ghost :global(.ant-modal-content) {
+  background: linear-gradient(to top, #5f6dbc 0%, #5f6dbc 90%, #5f6dbc 100%);
+}
+
+.type-ice :global(.ant-modal-content) {
+  background: linear-gradient(to top, #75d0c1 0%, #75d0c1 90%, #75d0c1 100%);
+}
+
+.type-steel :global(.ant-modal-content) {
+  background: linear-gradient(to top, #5695a3 0%, #5695a3 90%, #5695a3 100%);
+}
+
+.type-default :global(.ant-modal-content) {
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 90%, #ffffff 100%);
+}
