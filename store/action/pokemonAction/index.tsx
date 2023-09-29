@@ -12,9 +12,8 @@ interface PokemonSearch {
 
 export const fetchPokemon = createAsyncThunk("fetchPokemon", async () => {
   const response = await axios.get("pokemon?limit=20&offset=0");
-  const data = response.data.results; // Ambil array data dari response
+  const data = response.data.results;
 
-  // Buat array untuk menyimpan hasil panggilan API tambahan
   const additionalData = await Promise.all(
     data.map(async (pokemon: any) => {
       const response = await axios.get(pokemon.url);
@@ -22,7 +21,6 @@ export const fetchPokemon = createAsyncThunk("fetchPokemon", async () => {
     })
   );
 
-  // Gabungkan data dari panggilan API pertama dan kedua
   const mergedData = data.map((pokemon: any, index: number) => ({
     ...pokemon,
     ...additionalData[index],
@@ -51,9 +49,8 @@ export const fetchPokemonPagination = createAsyncThunk(
     const response = await axios.get(
       `pokemon?limit=${query.limit}&offset=${query.offset}`
     );
-    const data = response.data.results; // Ambil array data dari response
+    const data = response.data.results;
 
-    // Buat array untuk menyimpan hasil panggilan API tambahan
     const additionalData = await Promise.all(
       data.map(async (pokemon: any) => {
         const response = await axios.get(pokemon.url);
@@ -61,7 +58,6 @@ export const fetchPokemonPagination = createAsyncThunk(
       })
     );
 
-    // Gabungkan data dari panggilan API pertama dan kedua
     const mergedData = data.map((pokemon: any, index: number) => ({
       ...pokemon,
       ...additionalData[index],
